@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Administración de Empresas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Curricular</h1>
+  <div id="malla">
+
+    <!-- Semestre I -->
+    <div class="ramo" id="ADR01" data-unlock='["ADR09"]'>ADR01 - Fund. Contabilidad</div>
+    <div class="ramo" id="ADR02" data-unlock='["ADR08"]'>ADR02 - Fund. Administración</div>
+    <div class="ramo" id="ADR03" data-unlock='["ADR07"]'>ADR03 - Matemática Fund.</div>
+    <div class="ramo" id="ADR04" data-unlock='["ADR13"]'>ADR04 - Fund. Economía</div>
+    <div class="ramo" id="ADR05" data-unlock='["ADR22"]'>ADR05 - Fund. Mercadeo</div>
+
+    <!-- Semestre II -->
+    <div class="ramo bloqueado" id="ADR06">ADR06 - Responsabilidad Social</div>
+    <div class="ramo bloqueado" id="ADR07" data-unlock='["ADR13", "ADR18"]'>ADR07 - Cálculo I<br><small>Req: ADR03</small></div>
+    <div class="ramo bloqueado" id="ADR08">ADR08 - Teorías Administración<br><small>Req: ADR02</small></div>
+    <div class="ramo bloqueado" id="ADR09">ADR09 - Psicología y Comunicación<br><small>Req: ADR01</small></div>
+    <div class="ramo bloqueado" id="ADR10" data-unlock='["ADR26"]'>ADR10 - Costos</div>
+
+    <!-- Semestre III -->
+    <div class="ramo bloqueado" id="ADR11" data-unlock='["ADR17"]'>ADR11 - Inglés I</div>
+    <div class="ramo bloqueado" id="ADR12" data-unlock='["ADR21"]'>ADR12 - Prob. y Estadística</div>
+    <div class="ramo bloqueado" id="ADR13" data-unlock='["ADR20"]'>ADR13 - Microeconomía</div>
+    <div class="ramo bloqueado" id="ADR14" data-unlock='["ADR27"]'>ADR14 - Procesos Administración</div>
+    <div class="ramo bloqueado" id="ADR15" data-unlock='["ADR28"]'>ADR15 - Investigación Operaciones</div>
+    <div class="ramo bloqueado" id="ADR16">ADR16 - Investigación de Mercados</div>
+
+    <!-- Semestre IV -->
+    <div class="ramo bloqueado" id="ADR17" data-unlock='["ADR23"]'>ADR17 - Inglés II<br><small>Req: ADR11</small></div>
+    <div class="ramo bloqueado" id="ADR18" data-unlock='["ADR24"]'>ADR18 - Matemática Financiera<br><small>Req: ADR07</small></div>
+    <div class="ramo bloqueado" id="ADR19">ADR19 - Legislación Empresarial</div>
+    <div class="ramo bloqueado" id="ADR20" data-unlock='["ADR39"]'>ADR20 - Macroeconomía<br><small>Req: ADR13</small></div>
+    <div class="ramo bloqueado" id="ADR21">ADR21 - Estadística Aplicada<br><small>Req: ADR12</small></div>
+    <div class="ramo bloqueado" id="ADR22">ADR22 - Plan Estratégico de Mercado<br><small>Req: ADR05</small></div>
+
+    <!-- Semestre V -->
+    <div class="ramo bloqueado" id="ADR23" data-unlock='["ADR29"]'>ADR23 - Inglés III<br><small>Req: ADR17</small></div>
+    <div class="ramo bloqueado" id="ADR24" data-unlock='["ADR33"]'>ADR24 - Adm. Financiera I<br><small>Req: ADR18</small></div>
+    <div class="ramo bloqueado" id="ADR25" data-unlock='["ADR38"]'>ADR25 - Emprendimiento</div>
+    <div class="ramo bloqueado" id="ADR26" data-unlock='["ADR32", "ADR35"]'>ADR26 - Presupuesto<br><small>Req: ADR10</small></div>
+    <div class="ramo bloqueado" id="ADR27">ADR27 - Gestión Talento Humano<br><small>Req: ADR14</small></div>
+    <div class="ramo bloqueado" id="ADR28">ADR28 - Producción y Calidad<br><small>Req: ADR15</small></div>
+
+    <!-- Semestre VI -->
+    <div class="ramo bloqueado" id="ADR29">ADR29 - Inglés IV<br><small>Req: ADR23</small></div>
+    <div class="ramo bloqueado" id="ADR30">ADR30 - Razonamiento Cuantitativo</div>
+    <div class="ramo bloqueado" id="ADR31">ADR31 - Constitución Política</div>
+    <div class="ramo bloqueado" id="ADR32">ADR32 - Formulación Proyectos<br><small>Req: ADR26</small></div>
+    <div class="ramo bloqueado" id="ADR33">ADR33 - Adm. Financiera II<br><small>Req: ADR24</small></div>
+    <div class="ramo bloqueado" id="ADR34">ADR34 - Derecho Tributario</div>
+
+    <!-- Semestre VII -->
+    <div class="ramo bloqueado" id="ADR35">ADR35 - Gerencia de Proyectos<br><small>Req: ADR26, ADR33</small></div>
+    <div class="ramo bloqueado" id="ADR36">ADR36 - Administración Pública</div>
+    <div class="ramo bloqueado" id="ADR37">ADR37 - Simulación Gerencial</div>
+    <div class="ramo bloqueado" id="ADR38" data-unlock='["ADR43"]'>ADR38 - Creación Empresarial<br><small>Req: ADR25</small></div>
+    <div class="ramo bloqueado" id="ADR39">ADR39 - Modelo Desarrollo Económico<br><small>Req: ADR20</small></div>
+    <div class="ramo bloqueado" id="ADR40">ADR40 - Gestión Distribución Física</div>
+
+    <!-- Semestre VIII -->
+    <div class="ramo bloqueado" id="ADR41">ADR41 - Gerencia Estratégica</div>
+    <div class="ramo bloqueado" id="ADR42" data-unlock='["ADR46", "ADR47"]'>ADR42 - Trabajo de Grado I</div>
+    <div class="ramo bloqueado" id="ADR43">ADR43 - Innovación Empresarial<br><small>Req: ADR38</small></div>
+    <div class="ramo bloqueado" id="ADR44">ADR44 - Comercio Exterior</div>
+    <div class="ramo bloqueado" id="ADR45">ADR45 - Electiva I</div>
+
+    <!-- Semestre IX -->
+    <div class="ramo bloqueado" id="ADR46">ADR46 - Práctica Empresarial<br><small>Req: ADR42</small></div>
+    <div class="ramo bloqueado" id="ADR47">ADR47 - Trabajo de Grado II<br><small>Req: ADR42</small></div>
+    <div class="ramo bloqueado" id="ADR48">ADR48 - Electiva II</div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+  </html>
